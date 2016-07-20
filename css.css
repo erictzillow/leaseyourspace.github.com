@@ -1,0 +1,175 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #526066;
+}
+
+h2, h3 {
+    /*letter-spacing: 0.25em;*/
+/*    text-transform: uppercase;*/
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0 auto;
+}
+
+.l-box {
+    padding: 0.5em 2em;
+}
+
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+.pure-menu {
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+.banner {
+    background: transparent url('./assets/Smart_Lock_wood.png') center center no-repeat;
+    text-align: left;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/Smart_Lock_wood.png', sizingMethod='scale');
+
+    height: 568px;
+    width: 100%;
+    margin-bottom: 3em;
+    display: table;
+}
+.banner2 {
+    background: transparent url('./assets/pet_detected.png') center center no-repeat;
+    text-align: left;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/Smart_Lock_wood.png', sizingMethod='scale');
+
+    height: 568px;
+    width: 100%;
+    display: table;
+}
+
+
+/*
+ * -- PRICING TABLE WRAPPER --
+ * This element wraps up all the pricing table elements
+ */
+ .pricing-tables,
+ .information,
+ .block {
+    max-width: 1024px;
+    margin: 0 auto;
+ }
+
+ .picinfo{
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    margin-top: 109px;
+    padding: 10px 20px 35px 30px;
+ }
+
+
+/* Bullet point section */
+
+    .centerblock{
+        text-align: center;
+        color:#83A7A5;
+
+    }
+
+    .bulletfloat{
+        margin:.75em;
+    }
+
+        .shiftbulletsup{
+            margin-bottom:-160px;
+        }
+
+
+    .icon{
+        max-width:35%;
+        max-height:35%;
+    }
+    .bulletfloat p {
+        font-size: 14px
+    }
+
+    .bulletblock {
+        background: transparent url('./assets/lockshot.png') center center no-repeat;
+        background-size: 30%;
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/lockshot.png', sizingMethod='scale');
+    }
+
+
+
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: -1.5em;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+}
+    .footer a {
+        color: #ddd;
+    }
+
+
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .pricing-table {
+        margin-bottom: 0;
+    }
+
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 568px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}
